@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <script src="libs/phaser.min.js"></script>
+        <script type="module">
+            //import {SceneName} from './scenes/SceneName.js';
+
+            var config = {
+                type: Phaser.AUTO,
+                width: 1920,
+                height: 1080,
+                scale: {
+                    // Fit to window
+                    mode: Phaser.Scale.FIT,
+                },
+                scene: [
+                    //SceneName
+                ],
+            };
+
+            window.onload = () => {
+                new Phaser.Game(config);
+            }
+
+        </script>
+    </head>
+    <body></body>
+</html>
